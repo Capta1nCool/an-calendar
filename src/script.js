@@ -13,6 +13,7 @@ const fp = flatpickr(calendarContainer, {
   onChange: function (selectedDates, dateStr, instance) {
     window.callAmplenotePlugin("open_jot", selectedDates);
     this.redraw();
+    on_weekClick(this);
   },
   onDayCreate: async function (dObj, dStr, fp, dayElem) {
     const jotExists = await window.callAmplenotePlugin(
@@ -79,8 +80,7 @@ function on_weekClick(fpInstance) {
         parseInt(el.textContent),
         fpInstance.currentYear,
       );
-
-      fp.redraw();
+      el.innerHTML += `<div class="indicator"></div>`;
     });
   });
 }

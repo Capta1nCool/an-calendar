@@ -1,9 +1,9 @@
 {
-  "name": "amplenote-embed-starter",
+  "name": "an-calendar",
   "version": "1.0.0",
-  "description": "Starter project for Amplenote embed plugins",
+  "description": "Calendar plugin for amplenote",
   "main": "index.js",
-  "author": "Amplenote",
+  "author": "Captain Cool",
   "license": "MIT",
   "private": false,
   "devDependencies": {
