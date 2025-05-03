@@ -9,4 +9,4 @@
 - [x] Week numbers
 - [x] Year view
 - [x] Click on week note to get a week note
-- [ ] Hover to see the calendar weekly view
+- [ ] Hover to see the calendar task view

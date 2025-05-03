@@ -12,6 +12,7 @@ flatpickr(calendarContainer, {
   weekNumbers: true,
   onChange: function (selectedDates, dateStr, instance) {
     window.callAmplenotePlugin("open_jot", selectedDates);
+    this.redraw();
   },
   onDayCreate: async function (dObj, dStr, fp, dayElem) {
     const jotExists = await window.callAmplenotePlugin(

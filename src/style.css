@@ -30,3 +30,10 @@
     border-radius: 10px;
     border: 1px solid black;
 }
+
+.flatpickr-day.selected,
+.flatpickr-day.selected:hover {
+    background: none;
+    color: black;
+    border: 1px solid red;
+}
