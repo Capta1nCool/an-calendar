@@ -6,7 +6,7 @@ const calendarContainer = document.createElement("div");
 calendarContainer.id = "calendar";
 document.body.appendChild(calendarContainer);
 
-flatpickr(calendarContainer, {
+const fp = flatpickr(calendarContainer, {
   inline: true,
   dateFormat: "d-m-Y",
   weekNumbers: true,
@@ -79,6 +79,8 @@ function on_weekClick(fpInstance) {
         parseInt(el.textContent),
         fpInstance.currentYear,
       );
+
+      fp.redraw();
     });
   });
 }
