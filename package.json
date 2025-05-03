@@ -1,0 +1,21 @@
+{
+  "name": "amplenote-embed-starter",
+  "version": "1.0.0",
+  "description": "Starter project for Amplenote embed plugins",
+  "main": "index.js",
+  "author": "Amplenote",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "create-serve": "^1.0.1",
+    "esbuild": "^0.21.5"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.13",
+    "jszip": "^3.10.1"
+  },
+  "scripts": {
+    "dev": "node build.mjs --dev",
+    "build": "node build.mjs"
+  }
+}

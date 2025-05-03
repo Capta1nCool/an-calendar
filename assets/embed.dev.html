@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link href="./index.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript">
+            window.callAmplenotePlugin = async function (...args) {
+                if (args[0] == "goto_date") {
+                    let timestamp = args[1];
+                    console.log(timestamp);
+
+                    app.navigate(
+                        `https://www.amplenote.com/notes/${note.uuid}`,
+                    );
+                } else if (
+                    args[0] == "fetch_jot" ||
+                    args[0] == "fetch_week_jot"
+                ) {
+                    let x = Math.random();
+                    return x > 0.5;
+                }
+                console.log("window.callAmplenotePlugin", args);
+            };
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="text/javascript" src="./index.js"></script>
+    </body>
+</html>
