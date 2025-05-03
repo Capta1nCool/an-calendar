@@ -8,4 +8,5 @@
 - [x] Shift click to create a jot
 - [x] Week numbers
 - [x] Year view
-- [ ] Click on week note to get a week note
+- [x] Click on week note to get a week note
+- [ ] Hover to see the calendar weekly view
